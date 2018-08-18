@@ -44,7 +44,7 @@ switch(args[0].toLowerCase()) {
                 inline: false
             }],
             footer: {
-                footer: "Partager ce lien à tous vos amis !",
+                footer: "Partager ce lien à tous vos amis !"
                 },
         }
     });
