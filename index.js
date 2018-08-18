@@ -6,7 +6,7 @@ const prefix = (cfg.prefix);
     
     
 bot.on('ready', function() {
-    bot.user.setGame("ghashrod-red, /help");
+    bot.user.setActivity("ghashrod-red, /help");
     console.log("Je suis prêt !")
 });
     
