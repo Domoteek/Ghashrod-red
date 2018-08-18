@@ -10,11 +10,31 @@ bot.on('ready', function() {
 });
     
 bot.on('message', async function(message) {
-    if (message.content === PREFIX) {
-        if(message.content ==='hello') {
-                message.reply('world !');
+    if (message.author.equals(bot.user)) return;
+
+    if (!message.content.startsWith(PREFIX)) return;
+    var args = message.content.substring(PREFIX.length).split(" ");
+switch(args[0].toLowerCase()) {
+    case "invite":
+    message.channel.send("", {
+        embed: {
+            color: 0xFF0000,
+            author: message.author.name,
+            title: '',
+            fields: [{
+                name: "Lien d'invitation discord",
+                value: "https://discord.gg/BNNM6nj",
+                inline: false
+            }],
+            footer: {
+                footer: "Partager ce lien à tous vos amis !",
+                },
         }
-    }
+    });
+    break;
+}
+
+   
 });
     
 bot.login(token);
