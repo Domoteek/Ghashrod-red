@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const cfg = require('./index.json');
 const token = process.env.token;
-const prefix = (cfg.prefix);
+const prefix = ("/");
     
     
 bot.on('ready', function() {
@@ -12,7 +12,7 @@ bot.on('ready', function() {
     
 bot.on('message', message => {
     if(message.content === prefix) {
-        if(message.content ==='/hello') {
+        if(message.content ==='hello') {
                 message.reply('world !');
         }
     }
