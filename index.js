@@ -6,7 +6,7 @@ const prefix = (cfg.prefix);
 
 
 bot.on('ready', function() {
-    console.log("Je suis prêt !");
+    console.log("Je suis prêt !")
 });
 
 bot.on('message', message => {
@@ -17,4 +17,4 @@ bot.on('message', message => {
     }
 });
 
-bot.login(token); //token
+bot.login(token);
