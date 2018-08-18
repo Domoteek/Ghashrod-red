@@ -11,7 +11,7 @@ bot.on('ready', function() {
 
 bot.on('message', message => {
     if(message.content === prefix) {
-        if(message.content ==='!hello') {
+        if(message.content ==='/hello') {
             message.reply('world !');
         }
     }
