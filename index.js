@@ -3,7 +3,6 @@ const bot = new Discord.Client();
 const cfg = require('./index.json');
 const PREFIX = ("/");
 
-bot.login(cfg.token); //token
 
 bot.on('ready', function() {
     console.log("Je suis prêt !");
@@ -16,3 +15,5 @@ bot.on('message', message => {
         }
     }
 });
+
+bot.login(cfg.token); //token
