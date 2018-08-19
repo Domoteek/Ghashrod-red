@@ -1,4 +1,3 @@
-'use strict';
 const ytdl = require('ytdl-core');
 
 /*
