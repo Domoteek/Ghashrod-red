@@ -1,4 +1,3 @@
-'use strict';
 const config = require('./config.json');
 const tool = require('./tool.js');
 const ytdl = require('ytdl-core');
