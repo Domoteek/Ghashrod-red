@@ -1,4 +1,3 @@
-'use strict';
 const config = require('./config.json');
 const commandHelp = require('./help.js');
 const tool = require('./tool.js');
