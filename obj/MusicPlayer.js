@@ -1,4 +1,3 @@
-'use strict';
 const tool = require('../tool.js');
 
 /*
